@@ -1,0 +1,53 @@
+ALGORITHM nb-length-in-sentence
+VAR
+    str : STRING : ="the best in the world";
+    count : INTEGER = 0;
+BEGIN
+FOR (int i=0 ; i < str.length(); i++) Do
+ if (str.charAt[i] != " ") then
+ count++;
+ end if
+END_FOR
+write(count)
+
+ALGORITHM nb-word-in-sentence
+VAR
+    str : STRING :="the best in the world."
+    count: INTEGER = 1;
+BEGIN
+    FOR i in str Do
+    IF (i==" ")) THEN
+        count++
+    END_IF
+    END_FOR
+    write(count)
+END
+
+ALGORITHM nb-vowels-in-sentence
+VAR
+    str : STRING :="the best in the world";
+    vowels : CHAR :=['a', 'e', 'o', 'u', 'i','y'];
+    count : INTEGER :=0;
+BEGIN
+    FOR i in str Do
+    IF i in vowels  DO
+        count++
+        END_IF
+    END_FOR
+    write(count)
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
